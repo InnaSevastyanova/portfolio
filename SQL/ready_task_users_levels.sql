@@ -10,29 +10,29 @@
 
 1.  SELECT user_name
     FROM user
-WHERE  level_id = 1
-AND skill > 799000
-AND user_name LIKE ‘%a%’
+    WHERE  level_id = 1
+    AND skill > 799000
+    AND user_name LIKE '%a%'
 
 2. DELETE FROM user
-WHERE skill < 100000
+   WHERE skill < 100000
 
 3. SELECT *
-FROM user
-ORDER BY skill DESC
+   FROM user
+   ORDER BY skill DESC
 
 4. INSERT INTO user (user_name, level_id, skill)
-VALUES (‘Oleg’, 4, 10)
+   VALUES ('Oleg', 4, 10)
 
 5. UPDATE user
-SET skil = 2000000
-WHERE level_id < 2
+   SET skil = 2000000
+   WHERE level_id < 2
 
 6. SELECT user_name
-FROM user
-WHERE level_id IN (SELECT id
-FROM level
-WHERE level_name = ’admin’)
+   FROM user
+   WHERE level_id IN (SELECT id
+   FROM level
+   WHERE level_name = 'admin')
 
 7. SELECT user.user_name
    FROM user
