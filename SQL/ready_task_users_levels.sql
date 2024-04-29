@@ -35,7 +35,7 @@ FROM level
 WHERE level_name = ’admin’)
 
 7. SELECT user.user_name
-FROM user
-INNER JOIN level ON user.level_id = level.id
-WHERE level.level_name = 'admin'
+   FROM user
+   INNER JOIN level ON user.level_id = level.id
+   WHERE level.level_name = 'admin'
 
